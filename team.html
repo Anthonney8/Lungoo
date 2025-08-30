@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Cupicsart IT Solutions</title>
+    <meta name="description" content="Meet the expert team behind Cupicsart IT Solutions. Professional IT specialists dedicated to your success.">
+    
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Web Hosting Section Styles -->
+    <style>
+        /* Web Hosting Section Styles */
+        .web-hosting-section { padding: 80px 0; background: white; }
+        .hosting-intro { text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; line-height: 1.8; color: var(--light-text-color); }
+        .subsection-title { font-size: 2rem; color: var(--primary-color); margin-bottom: 40px; text-align: center; font-weight: 600; }
+        
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .service-card { background: var(--light-gray); border-radius: 15px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.15); }
+        .service-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--secondary-color), var(--primary-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 2rem; color: white; }
+        .service-card h4 { color: var(--primary-color); margin-bottom: 15px; font-size: 1.3rem; text-align: center; }
+        .service-card p { color: var(--light-text-color); margin-bottom: 20px; line-height: 1.6; text-align: center; }
+        .service-features { list-style: none; padding: 0; }
+        .service-features li { display: flex; align-items: center; gap: 10px; padding: 8px 0; color: var(--light-text-color); }
+        .service-features i { color: var(--success-color); font-size: 0.9rem; }
+        
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .feature-item { text-align: center; padding: 30px 20px; }
+        .feature-icon { width: 70px; height: 70px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; color: white; }
+        .feature-item h4 { color: var(--primary-color); margin-bottom: 15px; font-size: 1.2rem; }
+        .feature-item p { color: var(--light-text-color); line-height: 1.6; }
+        
+        .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .spec-category { background: var(--light-gray); border-radius: 12px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        .spec-category h4 { color: var(--primary-color); margin-bottom: 20px; font-size: 1.1rem; display: flex; align-items: center; gap: 10px; }
+        .spec-category h4 i { color: var(--secondary-color); }
+        .spec-category ul { list-style: none; padding: 0; }
+        .spec-category li { padding: 8px 0; color: var(--light-text-color); border-bottom: 1px solid var(--medium-gray); }
+        .spec-category li:last-child { border-bottom: none; }
+        
+        .hosting-cta { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 20px; padding: 50px 30px; text-align: center; color: white; }
+        .hosting-cta h3 { font-size: 2rem; margin-bottom: 15px; }
+        .hosting-cta p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+        .hosting-cta .cta-buttons { justify-content: center; }
+        .hosting-cta .btn-primary { background: white; color: var(--primary-color); }
+        .hosting-cta .btn-primary:hover { background: var(--light-gray); }
+        .hosting-cta .btn-secondary { background: transparent; border: 2px solid white; }
+        .hosting-cta .btn-secondary:hover { background: white; color: var(--primary-color); }
+        
+        @media (max-width: 768px) {
+            .services-grid, .features-grid, .specs-grid { grid-template-columns: 1fr; }
+            .hosting-cta { padding: 40px 20px; }
+            .hosting-cta h3 { font-size: 1.5rem; }
+        }
+        
+        /* Override back to top button position to left side */
+        .back-to-top {
+            left: 25px !important;
+            right: auto !important;
+        }
+        
+        @media (max-width: 768px) {
+            .back-to-top {
+                left: 20px !important;
+                right: auto !important;
+            }
+        }
+        
+        /* Enhanced contact information visibility */
+        .contact-item {
+            font-weight: 600 !important;
+            font-size: 0.9rem !important;
+        }
+        
+        .contact-item i {
+            color: #f39c12 !important;
+            font-size: 1rem !important;
+            min-width: 16px !important;
+        }
+        
+        .contact-item a {
+            color: #f39c12 !important;
+            font-weight: 700 !important;
+            text-decoration: none !important;
+        }
+        
+        .contact-item a:hover {
+            color: white !important;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+        }
+        
+        .contact-info {
+            background: rgba(255, 255, 255, 0.05) !important;
+            padding: 8px 16px !important;
+            border-radius: 25px !important;
+            border: 1px solid rgba(243, 156, 18, 0.3) !important;
+        }
+        
+        /* Technology History Section Styling */
+        .tech-history-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            position: relative;
+        }
+        
+        .tech-history-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="circuit" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 10 0 L 10 10 M 0 10 L 20 10" fill="none" stroke="rgba(37,71,106,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23circuit)"/></svg>');
+            pointer-events: none;
+        }
+        
+        .history-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--light-text-color);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .history-timeline {
+            position: relative;
+            margin: 60px 0;
+            z-index: 1;
+        }
+        
+        .history-timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+        
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-year {
+            flex: 0 0 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border-radius: 60px;
+            height: 120px;
+            width: 120px;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 8px 25px rgba(37,71,106,0.3);
+        }
+        
+        .timeline-content {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin: 0 30px;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            content: '';
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-right: 15px solid white;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content::before {
+            content: '';
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid white;
+        }
+        
+        .timeline-content h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .timeline-content p {
+            color: var(--light-text-color);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .timeline-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .timeline-features li {
+            display: flex;
+            align-items: center;
+            padding: 8px 0;
+            color: var(--text-color);
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .timeline-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .timeline-features li::before {
+            content: '▶';
+            color: var(--secondary-color);
+            font-size: 0.8rem;
+            margin-right: 12px;
+        }
+        
+        .sector-usage {
+            margin: 80px 0;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .usage-category {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .usage-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .usage-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        
+        .usage-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .usage-header h4 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .usage-evolution {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        .evolution-stage {
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .evolution-stage:first-child {
+            background: linear-gradient(135deg, #fff5f5, #fed7d7);
+            border-left: 4px solid #e53e3e;
+        }
+        
+        .evolution-stage:last-child {
+            background: linear-gradient(135deg, #f0fff4, #c6f6d5);
+            border-left: 4px solid #38a169;
+        }
+        
+        .evolution-stage strong {
+            color: var(--primary-color);
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .evolution-stage p {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        .impact-stats {
+            margin: 80px 0;
+            z-index: 1;
+            position: relative;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .stat-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .stat-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 10px;
+        }
+        
+        .stat-description {
+            font-size: 0.9rem;
+            color: var(--light-text-color);
+            line-height: 1.5;
+        }
+        
+        .future-outlook {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .future-outlook::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+            pointer-events: none;
+        }
+        
+        @keyframes float {
+            0% { transform: translateX(0) translateY(0); }
+            100% { transform: translateX(-50px) translateY(-50px); }
+        }
+        
+        .outlook-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .outlook-content h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .outlook-content p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .future-trends {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .trend-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .trend-item i {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+        
+        .trend-item strong {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .timeline-item {
+                flex-direction: column !important;
+                align-items: center;
+            }
+            
+            .timeline-content {
+                margin: 20px 0 0 0;
+            }
+            
+            .timeline-content::before {
+                display: none;
+            }
+            
+            .history-timeline::before {
+                display: none;
+            }
+            
+            .usage-evolution {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .tech-history-section {
+                padding: 60px 0;
+            }
+            
+            .timeline-year {
+                width: 100px;
+                height: 100px;
+                font-size: 1rem;
+            }
+            
+            .timeline-content {
+                padding: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+            
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .future-outlook {
+                padding: 30px 20px;
+            }
+            
+            .future-trends {
+                grid-template-columns: 1fr;
+            }
+            
+            .outlook-content h3 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-top-content">
+                            <div class="contact-info">
+                                <span class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:265992260985">265992260985</a>
+                                </span>
+                                <span class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a>
+                                </span>
+                            </div>
+                            <div class="social-links">
+                                <a href="https://wa.me/265992260985" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://facebook.com/cupicsart" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-main">
+                    <div class="container">
+                        <div class="header-main-content">
+                            <div class="logo-section">
+                                <div class="logo">
+                                    <img src="logo.jpg" alt="Cupicsart IT Solutions Logo" class="logo-img">
+                                    <div class="logo-text">
+                                        <h1>Cupicsart IT Solutions</h1>
+                                        <p class="tagline">Professional IT Services & Hardware Store</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-actions">
+                                <a href="index.html" class="btn-primary">
+                                    <i class="fas fa-home"></i> Back to Home
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="team-page">
+            <!-- Hero Section -->
+            <section class="team-hero">
+                <div class="container">
+                    <h1 class="hero-title">Meet Our Expert Team</h1>
+                    <p class="hero-subtitle">The passionate professionals behind Cupicsart IT Solutions, dedicated to delivering exceptional technology services.</p>
+                </div>
+            </section>
+
+            <!-- Why Trust Us -->
+            <section class="trust-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Cupicsart  <br>IT Solutions?</h2>
+                    <div class="trust-grid">
+                        <div class="trust-card">
+                            <div class="trust-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Certified Professionals</h3>
+                            <p>Industry-recognized certifications and continuous skill updates to stay current with technology trends.</p>
+                        </div>
+                        <div class="trust-card">
+                            <div class="trust-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Reliable Service</h3>
+                            <p>Dependable IT solutions with comprehensive warranties and ongoing support for all services.</p>
+                        </div>
+                        <div class="trust-card">
+                            <div class="trust-icon"><i class="fas fa-clock"></i></div>
+                            <h3>Fast Response</h3>
+                            <p>Quick turnaround times to minimize downtime and keep your business running smoothly.</p>
+                        </div>
+                        <div class="trust-card">
+                            <div class="trust-icon"><i class="fas fa-handshake"></i></div>
+                            <h3>Customer-First</h3>
+                            <p>We prioritize satisfaction through honest, transparent communication and fair pricing.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Members -->
+            <section class="team-members">
+                <div class="container">
+                    <h2 class="section-title">Our Leadership Team</h2>
+                    <div class="team-grid">
+                        <!-- CEO -->
+                        <div class="team-member ceo-card">
+                            <div class="member-photo">
+                                <div class="photo-placeholder"><i class="fas fa-user-tie"></i></div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">KONDWANI KAPICHI</h3>
+                                <p class="member-title">CEO & Founder</p>
+                                <div class="member-credentials">
+                                    <span class="credential">Information Communicatio and Technology(ICT)</span>
+                                    <span class="credential">4+ Years Experience</span>
+                                </div>
+                                <p class="member-bio">Founded Cupicsart IT Solutions with 4+ years of experience in computer systems, network administration, and business management. Leads our team with expertise and passion for technology innovation.</p>
+                                <div class="member-specialties">
+                                    <strong>Specialties:</strong> Business Strategy, System Architecture, Network Infrastructure, IT Project Management
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Technical Lead -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <div class="photo-placeholder"><i class="fas fa-user-cog"></i></div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">RINA JACOB</h3>
+                                <p class="member-title">Technical Lead & Hardware Specialist</p>
+                                <div class="member-credentials">
+                                    <span class="credential">ICT</span>
+                                    <span class="credential">2+ Years Experience</span>
+                                </div>
+                                <p class="member-bio">Technical expert specializing in computer hardware repair, component diagnostics, and system optimization. Ensures all repairs meet the highest quality standards.</p>
+                                <div class="member-specialties">
+                                    <strong>Specialties:</strong> Hardware Repair, Component Diagnostics, Performance Optimization, Technical Leadership
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Network Specialist -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <div class="photo-placeholder"><i class="fas fa-network-wired"></i></div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">PRECIOUS MKUMBA</h3>
+                                <p class="member-title">Network Engineer & Security Specialist</p>
+                                <div class="member-credentials">
+                                    <span class="credential">ICT</span>
+                                    <span class="credential">2+ Years Experience</span>
+                                </div>
+                                <p class="member-bio">Extensive experience in network design, implementation, and security. Manages complex network installations and ensures robust security measures.</p>
+                                <div class="member-specialties">
+                                    <strong>Specialties:</strong> Network Design, Cybersecurity, Router Configuration, Network Troubleshooting
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Software Specialist -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <div class="photo-placeholder"><i class="fas fa-code"></i></div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">ANTHONY LUNGU</h3>
+                                <p class="member-title">Software Solutions Specialist</p>
+                                <div class="member-credentials">
+                                    <span class="credential">ICT</span>
+                                    <span class="credential">2+ Years Experience</span>
+                                </div>
+                                <p class="member-bio">Specializes in software installation, troubleshooting, and custom solutions. Helps optimize software environments and provides user training.</p>
+                                <div class="member-specialties">
+                                    <strong>Specialties:</strong> Software Installation, OS Optimization, Data Recovery, User Training
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Customer Success -->
+                        <div class="team-member">
+                            <div class="member-photo">
+                                <div class="photo-placeholder"><i class="fas fa-users"></i></div>
+                            </div>
+                            <div class="member-info">
+                                <h3 class="member-name">AUBREY MADENGU</h3>
+                                <p class="member-title">Customer Success Manager</p>
+                                <div class="member-credentials">
+                                    <span class="credential">ICT</span>
+                                    <span class="credential">2+ Years Experience</span>
+                                </div>
+                                <p class="member-bio">Ensures exceptional service from consultation to ongoing support. Manages client relationships and coordinates project delivery.</p>
+                                <div class="member-specialties">
+                                    <strong>Specialties:</strong> Customer Relations, Project Coordination, Quality Assurance, Process Optimization
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Milestones -->
+            <section class="milestones-section">
+                <div class="container">
+                    <h2 class="section-title">Our Achievements & Milestones</h2>
+                    <div class="milestones-grid">
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="milestone-number">2023</div>
+                            <h3>Company Founded</h3>
+                            <p>Established with a mission to provide professional IT services in Malawi.</p>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-users"></i></div>
+                            <div class="milestone-number">5+</div>
+                            <h3>Satisfied Customers</h3>
+                            <p>Successfully served over 500 customers across various sectors.</p>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-tools"></i></div>
+                            <div class="milestone-number">20+</div>
+                            <h3>Devices Repaired</h3>
+                            <p>Completed over 2000 successful repairs with 98% satisfaction rate.</p>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-network-wired"></i></div>
+                            <div class="milestone-number">10+</div>
+                            <h3>Networks Installed</h3>
+                            <p>Designed and implemented over 100 network infrastructures.</p>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-award"></i></div>
+                            <div class="milestone-number">2024</div>
+                            <h3>Excellence Award</h3>
+                            <p>Recognized as "Outstanding IT Service Provider" by Malawi ICT Association.</p>
+                            <p>The community is growing up we love the this <br> community</p>
+                        </div>
+                        <div class="milestone-card">
+                            <div class="milestone-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+                            <div class="milestone-number">2025</div>
+                            <h3>Service Expansion</h3>
+                            <p>Expanded to include online store, nationwide delivery, and 24/7 support.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Web Hosting Section -->
+            <section class="web-hosting-section">
+                <div class="container">
+                    <h2 class="section-title">Professional Web Hosting Solutions</h2>
+                    <div class="hosting-intro">
+                        <p>At Cupicsart IT Solutions, we provide reliable, secure, and affordable web hosting services designed to help businesses establish and maintain a strong online presence. Our hosting solutions are backed by expert technical support and cutting-edge infrastructure.</p>
+                    </div>
+
+                    <!-- Hosting Services -->
+                    <div class="hosting-services">
+                        <h3 class="subsection-title">Our Web Hosting Services</h3>
+                        <div class="services-grid">
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <h4>Shared Web Hosting</h4>
+                                <p>Perfect for small businesses and personal websites. Cost-effective solution with reliable uptime and technical support.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> 99.9% Uptime Guarantee</li>
+                                    <li><i class="fas fa-check"></i> SSL Certificates Included</li>
+                                    <li><i class="fas fa-check"></i> WordPress Compatible</li>
+                                    <li><i class="fas fa-check"></i> 24/7 Technical Support</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-cloud"></i>
+                                </div>
+                                <h4>Cloud Hosting</h4>
+                                <p>Scalable cloud infrastructure for growing businesses. Enhanced performance, reliability, and flexibility.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Scalable Resources</li>
+                                    <li><i class="fas fa-check"></i> Load Balancing</li>
+                                    <li><i class="fas fa-check"></i> Automatic Backups</li>
+                                    <li><i class="fas fa-check"></i> High-Speed SSD Storage</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h4>Secure Business Hosting</h4>
+                                <p>Enterprise-grade hosting with advanced security features for business-critical websites and applications.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Advanced Security Monitoring</li>
+                                    <li><i class="fas fa-check"></i> DDoS Protection</li>
+                                    <li><i class="fas fa-check"></i> Daily Automated Backups</li>
+                                    <li><i class="fas fa-check"></i> Dedicated IP Address</li>
+                                </ul>
+                            </div>
+
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>Domain Registration</h4>
+                                <p>Complete domain services including registration, transfer, and management with competitive pricing.</p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Multiple Domain Extensions</li>
+                                    <li><i class="fas fa-check"></i> Domain Privacy Protection</li>
+                                    <li><i class="fas fa-check"></i> Easy Domain Management</li>
+                                    <li><i class="fas fa-check"></i> DNS Management Tools</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hosting Features -->
+                    <div class="hosting-features">
+                        <h3 class="subsection-title">Why Choose Our Web Hosting?</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <h4>High Performance</h4>
+                                <p>Fast loading speeds with SSD storage, optimized servers, and content delivery networks for superior website performance.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h4>Enhanced Security</h4>
+                                <p>Comprehensive security measures including SSL certificates, malware scanning, and regular security updates.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4>Expert Support</h4>
+                                <p>24/7 technical support from certified professionals who understand local business needs and challenges.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-backup"></i>
+                                </div>
+                                <h4>Reliable Backups</h4>
+                                <p>Automated daily backups with easy restoration options to ensure your data is always protected and recoverable.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Scalable Solutions</h4>
+                                <p>Flexible hosting plans that grow with your business, from startup websites to enterprise applications.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <h4>Affordable Pricing</h4>
+                                <p>Competitive pricing with transparent costs, no hidden fees, and flexible payment options for Malawian businesses.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Specifications -->
+                    <div class="hosting-specs">
+                        <h3 class="subsection-title">Technical Specifications</h3>
+                        <div class="specs-grid">
+                            <div class="spec-category">
+                                <h4><i class="fas fa-server"></i> Server Infrastructure</h4>
+                                <ul>
+                                    <li>Latest Intel Xeon processors</li>
+                                    <li>High-speed SSD storage arrays</li>
+                                    <li>Redundant network connections</li>
+                                    <li>Enterprise-grade hardware</li>
+                                </ul>
+                            </div>
+
+                            <div class="spec-category">
+                                <h4><i class="fas fa-code"></i> Supported Technologies</h4>
+                                <ul>
+                                    <li>PHP 7.4, 8.0, 8.1, 8.2</li>
+                                    <li>MySQL & MariaDB databases</li>
+                                    <li>Python & Node.js support</li>
+                                    <li>WordPress, Joomla, Drupal</li>
+                                </ul>
+                            </div>
+
+                            <div class="spec-category">
+                                <h4><i class="fas fa-tools"></i> Control Panel</h4>
+                                <ul>
+                                    <li>User-friendly cPanel interface</li>
+                                    <li>One-click software installation</li>
+                                    <li>File manager and FTP access</li>
+                                    <li>Email account management</li>
+                                </ul>
+                            </div>
+
+                            <div class="spec-category">
+                                <h4><i class="fas fa-shield-alt"></i> Security Features</h4>
+                                <ul>
+                                    <li>Free SSL certificates</li>
+                                    <li>Malware scanning & removal</li>
+                                    <li>Firewall protection</li>
+                                    <li>Regular security updates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hosting CTA -->
+                    <div class="hosting-cta">
+                        <h3>Ready to Host Your Website?</h3>
+                        <p>Get started with our reliable web hosting solutions today. Our team will help you choose the perfect hosting plan for your needs.</p>
+                        <div class="cta-buttons">
+                            <a href="tel:265992260985" class="btn-primary">
+                                <i class="fas fa-phone"></i> Discuss Hosting: 265992260985
+                            </a>
+                            <a href="mailto:cupicsart@gmail.com" class="btn-secondary">
+                                <i class="fas fa-envelope"></i> Get Hosting Quote
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology History in Malawi -->
+            <section class="tech-history-section">
+                <div class="container">
+                    <h2 class="section-title">The Evolution of Computer Technology in Malawi</h2>
+                    <div class="history-intro">
+                        <p>Witness the remarkable transformation of computer technology adoption across Malawi, from the early days of limited access to today's digital revolution that spans across all sectors of society.</p>
+                    </div>
+
+                    <!-- Historical Timeline -->
+                    <div class="history-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">1990s</div>
+                            <div class="timeline-content">
+                                <h3>The Dawn of Computing</h3>
+                                <p>Computer technology first arrived in Malawi through government offices and international organizations. Large, expensive desktop computers were primarily used for basic word processing and data entry tasks.</p>
+                                <ul class="timeline-features">
+                                    <li>DOS-based systems with limited functionality</li>
+                                    <li>Mainly found in banks and government ministries</li>
+                                    <li>Operated by specially trained technicians</li>
+                                    <li>Very limited internet connectivity</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2000s</div>
+                            <div class="timeline-content">
+                                <h3>Gradual Expansion</h3>
+                                <p>Windows-based computers became more common in offices, and the first computer labs appeared in universities. Internet cafes emerged in major cities, providing public access to email and basic web browsing.</p>
+                                <ul class="timeline-features">
+                                    <li>Introduction of Windows 95/98/XP systems</li>
+                                    <li>First internet cafes in Blantyre and Lilongwe</li>
+                                    <li>Universities established computer labs</li>
+                                    <li>Email became a primary business communication tool</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010s</div>
+                            <div class="timeline-content">
+                                <h3>Digital Acceleration</h3>
+                                <p>Laptops became more affordable, mobile internet expanded, and social media transformed communication. Secondary schools began introducing computer studies as a subject.</p>
+                                <ul class="timeline-features">
+                                    <li>Widespread adoption of laptops and tablets</li>
+                                    <li>3G and 4G mobile internet expansion</li>
+                                    <li>Facebook and WhatsApp changed social interaction</li>
+                                    <li>E-banking and mobile money services launched</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2020s</div>
+                            <div class="timeline-content">
+                                <h3>Digital Transformation</h3>
+                                <p>COVID-19 accelerated digital adoption across all sectors. Remote work, online learning, and digital services became essential parts of daily life for many Malawians.</p>
+                                <ul class="timeline-features">
+                                    <li>Remote work and video conferencing became standard</li>
+                                    <li>Online learning platforms for all education levels</li>
+                                    <li>Digital payment systems widely adopted</li>
+                                    <li>Cloud computing and modern web applications</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sector Usage Analysis -->
+                    <div class="sector-usage">
+                        <h3 class="subsection-title">Computer Technology Across Different Sectors</h3>
+                        
+                        <!-- Offices and Business -->
+                        <div class="usage-category">
+                            <div class="usage-header">
+                                <div class="usage-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <h4>Offices & Business Environment</h4>
+                            </div>
+                            <div class="usage-evolution">
+                                <div class="evolution-stage">
+                                    <strong>Past (1990s-2000s):</strong>
+                                    <p>Basic desktop computers for typing letters, simple accounting with Excel, and limited email communication. Most work was still paper-based with computers serving as glorified typewriters.</p>
+                                </div>
+                                <div class="evolution-stage">
+                                    <strong>Present (2020s):</strong>
+                                    <p>Fully integrated digital workflows with cloud-based accounting systems, video conferencing, digital document management, CRM systems, and mobile-responsive websites. Remote work capabilities are now standard.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Primary Education -->
+                        <div class="usage-category">
+                            <div class="usage-header">
+                                <div class="usage-icon">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <h4>Primary School Education</h4>
+                            </div>
+                            <div class="usage-evolution">
+                                <div class="evolution-stage">
+                                    <strong>Past (1990s-2010s):</strong>
+                                    <p>Very limited computer exposure, mostly through occasional visits to computer labs in urban schools. Basic keyboard and mouse skills were taught when computers were available.</p>
+                                </div>
+                                <div class="evolution-stage">
+                                    <strong>Present (2020s):</strong>
+                                    <p>Interactive learning through educational tablets and laptops, digital literacy programs, coding basics for young learners, educational games and apps, and online homework submission systems in progressive schools.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Education -->
+                        <div class="usage-category">
+                            <div class="usage-header">
+                                <div class="usage-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Secondary School Education</h4>
+                            </div>
+                            <div class="usage-evolution">
+                                <div class="evolution-stage">
+                                    <strong>Past (2000s-2010s):</strong>
+                                    <p>Introduction of Computer Studies as an optional subject, learning MS Office applications, basic programming concepts, and typing skills. Limited to schools with computer labs.</p>
+                                </div>
+                                <div class="evolution-stage">
+                                    <strong>Present (2020s):</strong>
+                                    <p>Comprehensive ICT curriculum including web development, database management, digital citizenship, online research skills, presentation software mastery, and preparation for digital careers.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- University Education -->
+                        <div class="usage-category">
+                            <div class="usage-header">
+                                <div class="usage-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h4>University & Higher Education</h4>
+                            </div>
+                            <div class="usage-evolution">
+                                <div class="evolution-stage">
+                                    <strong>Past (1990s-2000s):</strong>
+                                    <p>Shared computer labs with limited hours, basic word processing for assignments, email for academic communication, and introduction to specialized software for different fields of study.</p>
+                                </div>
+                                <div class="evolution-stage">
+                                    <strong>Present (2020s):</strong>
+                                    <p>Personal laptops required for most programs, learning management systems (LMS), online thesis submissions, virtual laboratories, research databases access, programming in multiple languages, and industry-standard software training.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Impact Statistics -->
+                    <div class="impact-stats">
+                        <h3 class="subsection-title">Digital Transformation Impact</h3>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="stat-number">500%</div>
+                                <div class="stat-label">Increase in Computer Ownership</div>
+                                <p class="stat-description">Since 2010, computer ownership has grown dramatically across households</p>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-wifi"></i>
+                                </div>
+                                <div class="stat-number">85%</div>
+                                <div class="stat-label">Internet Penetration</div>
+                                <p class="stat-description">Mobile internet access has revolutionized connectivity</p>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="stat-number">70%</div>
+                                <div class="stat-label">Digital Learning Adoption</div>
+                                <p class="stat-description">Educational institutions now integrate digital tools</p>
+                            </div>
+                            
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Mobile Money Usage</div>
+                                <p class="stat-description">Digital payments have transformed financial services</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Future Outlook -->
+                    <div class="future-outlook">
+                        <div class="outlook-content">
+                            <h3>Looking Ahead: The Future of Computing in Malawi</h3>
+                            <p>As Malawi continues its digital transformation journey, we anticipate further innovations in artificial intelligence, Internet of Things (IoT), and cloud computing. Our commitment at Cupicsart IT Solutions is to support this growth by providing accessible technology solutions, expert training, and reliable technical support for individuals, businesses, and educational institutions.</p>
+                            
+                            <div class="future-trends">
+                                <div class="trend-item">
+                                    <i class="fas fa-brain"></i>
+                                    <strong>AI Integration:</strong> Artificial intelligence tools becoming accessible for local businesses
+                                </div>
+                                <div class="trend-item">
+                                    <i class="fas fa-cloud"></i>
+                                    <strong>Cloud First:</strong> Migration to cloud-based solutions for improved efficiency
+                                </div>
+                                <div class="trend-item">
+                                    <i class="fas fa-network-wired"></i>
+                                    <strong>IoT Expansion:</strong> Connected devices improving agriculture and healthcare
+                                </div>
+                                <div class="trend-item">
+                                    <i class="fas fa-code"></i>
+                                    <strong>Local Development:</strong> Growing community of Malawian software developers
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="team-cta">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>Ready to Work with Our Expert Team?</h2>
+                        <p>Contact us for professional IT services, computer repair, or hardware solutions.</p>
+                        <div class="cta-buttons">
+                            <a href="tel:265992260985" class="btn-primary">
+                                <i class="fas fa-phone"></i> Call: 265992260985
+                            </a>
+                            <a href="mailto:cupicsart@gmail.com" class="btn-secondary">
+                                <i class="fas fa-envelope"></i> Email Us
+                            </a>
+                            <a href="https://wa.me/265992260985" class="btn-outline" target="_blank">
+                                <i class="fab fa-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- WhatsApp Float -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/265992260985" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                <span class="whatsapp-text">Chat with us</span>
+            </a>
+        </div>
+
+        <!-- Back to Top Button -->
+        <div class="back-to-top" id="back-to-top">
+            <a href="#" onclick="scrollToTop(); return false;" aria-label="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+                <span class="back-to-top-text">Back to Top</span>
+            </a>
+        </div>
+    </div>
+
+
+
+            <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="logo.jpg" alt="Cupicsart IT Solutions">
+                            <div class="footer-logo-text">
+                                <h3>Cupicsart IT Solutions</h3>
+                                <p>Professional IT Services</p>
+                            </div>
+                        </div>
+                        <p>Your trusted partner for computer repair, printer services, and IT hardware. Professional solutions for all your technology needs.</p>
+                        <div class="footer-social">
+                            <a href="https://wa.me/265992260985" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://facebook.com/cupicsart" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/cupicsart" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    >
+
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:265992260985">265992260985</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Fri: 07:30AM-17:00PM</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>90-Day Warranty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>&copy; 2023 Cupicsart IT Solutions. All rights reserved. Founded by Kondwani Kapichi.</p>
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Warranty Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    <script>
+        // Back to Top functionality for team.html
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button on scroll
+        window.addEventListener('scroll', () => {
+            const backToTopBtn = document.getElementById('back-to-top');
+            
+            // Back to top button logic
+            if (backToTopBtn) {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            }
+        });
+    </script>
+</body>
+</html>

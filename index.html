@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupicsart IT Solutions - Professional Computer Repair & Hardware Store</title>
+    <meta name="description" content="Professional IT services, computer repair, printer repair, hardware sales. SSDs, HDDs, network cables, crimping tools, and more. Expert hardware and software solutions.">
+    <meta name="keywords" content="computer repair, IT services, SSD, HDD, network cables, RJ45, crimping tools, cable tester, printer repair, hardware, software">
+    <meta name="author" content="Kondwani Kapichi - Cupicsart IT Solutions">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Cupicsart IT Solutions - Professional Computer Repair & Hardware">
+    <meta property="og:description" content="Expert IT services, computer repair, and hardware sales. Professional solutions for all your technology needs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/cupicsart-it-shop">
+    <meta property="og:image" content="logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Cupicsart IT Solutions",
+      "description": "Professional IT services, computer repair, and hardware sales",
+      "founder": {
+        "@type": "Person",
+        "name": "Kondwani Kapichi"
+      },
+      "telephone": "265992260985",
+      "email": "cupicsart@gmail.com",
+      "url": "https://yourusername.github.io/cupicsart-it-shop",
+      "serviceArea": "Worldwide",
+      "priceRange": "MWK",
+      "openingHours": "Mo-Fri 07:00-17:00"
+    }
+    </script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Professional Header -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Top Bar -->
+                <div class="header-top">
+                    <div class="container">
+                        <div class="header-top-content">
+                            <div class="contact-info">
+                                <span class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:265992260985">265992260985</a>
+                                </span>
+                                <span class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a>
+                                </span>
+                            </div>
+                            <div class="social-links">
+                                <a href="www.https://wa.me/265992260985" aria-label="WhatsApp" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="www.https://facebook.com/cupicsart" aria-label="Facebook" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="www.https://instagram.com/cupicsart" aria-label="Instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Header -->
+                <div class="header-main">
+                    <div class="container">
+                        <div class="header-main-content">
+                            <!-- Logo Section -->
+                            <div class="logo-section">
+                                <div class="logo">
+                                    <img src="logo.jpg" alt="Cupicsart IT Solutions Logo" class="logo-img">
+                                    <div class="logo-text">
+                                        <h1>Cupicsart IT Solutions</h1>
+                                        <p class="tagline">Professional IT Services & Hardware Store</p>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Search Section -->
+                            <div class="search-section">
+                                <div class="search-container">
+                                    <input type="text" placeholder="Search products & services..." id="search-input" class="search-input">
+                                    <button class="search-btn" id="search-btn">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="search-suggestions" id="search-suggestions"></div>
+                            </div>
+
+                            <!-- Header Actions -->
+                            <div class="header-actions">
+                                <div class="action-item">
+                                    <button class="action-btn" id="quote-btn">
+                                        <i class="fas fa-calculator"></i>
+                                        <span>Get Quote</span>
+                                    </button>
+                                </div>
+                                <div class="action-item">
+                                    <button class="action-btn cart-btn" id="cart-btn">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>Cart</span>
+                                        <span class="cart-count" id="cart-count">0</span>
+                                    </button>
+                                </div>
+                                <div class="action-item mobile-only mobile-menu-item">
+                                    <button class="mobile-menu-btn" id="mobile-menu-btn">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav">
+                    <div class="container">
+                        <div class="nav-content">
+                            <div class="nav-links">
+                                <a href="#" class="nav-link active" data-page="home">
+                                    <i class="fas fa-home"></i>
+                                    <span>Home</span>
+                                </a>
+                                <div class="nav-dropdown">
+                                    <a href="#" class="nav-link" data-page="products">
+                                        <i class="fas fa-microchip"></i>
+                                        <span>Hardware</span>
+                                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" onclick="shop.showProductCategory('storage')">Storage (SSD/HDD)</a>
+                                        <a href="#" onclick="shop.showProductCategory('networking')">Network Equipment</a>
+                                        <a href="#" onclick="shop.showProductCategory('tools')">Tools & Testers</a>
+                                        <a href="#" onclick="shop.showProductCategory('components')">PC Components & Computers</a>
+                                        <a href="#" onclick="shop.showProductCategory('accessories')">Accessories & chargers</a>
+                                        <a href="#" onclick="shop.showProductCategory('peripherals')">Peripherals</a>
+                                        <a href="#" onclick="shop.showProductCategory('printers')">Printers</a>
+                                        <a href="#" onclick="shop.showProductCategory('audio')">Audio & USB</a>
+                                        <a href="#" onclick="shop.showProductCategory('tvs')">TVs & PHONES</a>
+                                    </div>
+                                </div>
+                                <div class="nav-dropdown">
+                                    <a href="#" class="nav-link" data-page="services">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Services</span>
+                                        <i class="fas fa-chevron-down dropdown-icon"></i>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" onclick="shop.showService('computer-repair')">Computer Repair</a>
+                                        <a href="#" onclick="shop.showService('printer-repair')">Printer Repair</a>
+                                        <a href="#" onclick="shop.showService('software-support')">Software Support</a>
+                                        <a href="#" onclick="shop.showService('network-setup')">Network Setup</a>
+                                        <a href="#" onclick="shop.showService('data-recovery')">Data Recovery</a>
+                                    </div>
+                                </div>
+                                <a href="#" class="nav-link" data-page="blog">
+                                    <i class="fas fa-blog"></i>
+                                    <span>Blog</span>
+                                </a>
+                                <a href="#" class="nav-link" data-page="about">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>About</span>
+                                </a>
+                                <a href="#" class="nav-link" data-page="contact">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <span>Contact</span>
+                                </a>
+                                <a href="#" class="nav-link" data-page="support">
+                                    <i class="fas fa-headset"></i>
+                                    <span>Support</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="mobile-logo">
+                        <img src="logo.jpg" alt="Cupicsart IT Solutions">
+                        <span>Cupicsart IT</span>
+                    </div>
+                    <button class="mobile-menu-close" id="mobile-menu-close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="mobile-nav-links">
+                    <a href="#" class="mobile-nav-link" data-page="home">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="products">
+                        <i class="fas fa-microchip"></i> Hardware
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="services">
+                        <i class="fas fa-tools"></i> Services
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="blog">
+                        <i class="fas fa-blog"></i> Blog
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="about">
+                        <i class="fas fa-info-circle"></i> About
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="contact">
+                        <i class="fas fa-phone-alt"></i> Contact
+                    </a>
+                    <a href="#" class="mobile-nav-link" data-page="support">
+                        <i class="fas fa-headset"></i> Support
+                    </a>
+                </div>
+                <div class="mobile-contact">
+                    <a href="tel:265992260985" class="mobile-contact-btn">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="https://wa.me/265992260985" class="mobile-contact-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Page -->
+            <div class="page active" id="home-page">
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-background">
+                        <div class="hero-overlay"></div>
+                    </div>
+                    <div class="container">
+
+
+                        
+                        <div class="hero-content">
+                            <div class="hero-text">
+                                <h1 class="hero-title">
+                                    Professional IT Solutions
+                                    <span class="highlight">& Computer Repair</span>
+                                </h1>
+                                <p class="hero-description">
+                                    Expert computer repair, printer services, and premium hardware sales. 
+                                    From SSDs to network cables, we've got all your IT needs covered.
+                                </p>
+                                <div class="hero-features">
+                                    <div class="hero-feature">
+                                        <i class="fas fa-tools"></i>
+                                        <span>Expert Repairs</span>
+                                    </div>
+                                    <div class="hero-feature">
+                                        <i class="fas fa-shipping-fast"></i>
+                                        <span>Fast Service</span>
+                                    </div>
+                                    <div class="hero-feature">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Warranty Included</span>
+                                    </div>
+                                </div>
+                                <div class="hero-buttons">
+                                    <button class="btn-primary" onclick="shop.showPage('services')">
+                                        <i class="fas fa-tools"></i> Book Repair
+                                    </button>
+                                    <button class="btn-secondary" onclick="shop.showPage('products')">
+                                        <i class="fas fa-shopping-bag"></i> Shop Hardware
+                                    </button>
+                                    <a href="team.html" class="btn-outline">
+                                        <i class="fas fa-users"></i> Our Team
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <div class="hero-card">
+                                    <img src="logo.jpg" alt="Professional IT Services" class="hero-logo">
+                                    <div class="hero-stats">
+                                        <div class="stat">
+                                            <span class="stat-number">500+</span>
+                                            <span class="stat-label">Repairs Done</span>
+                                        </div>
+                                        <div class="stat">
+                                            <span class="stat-number">24/7</span>
+                                            <span class="stat-label">Support</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                </section>
+                <section class="hero-section">
+
+        <div class="trash-boat">
+
+               <!-- Hosting CTA -->
+                    <div class="hosting-cta">
+                        <h3>Ready to Host Your Website?</h3>
+                        <p>Get started with our reliable web hosting solutions today. Our team will help you choose the perfect hosting plan for your needs.</p>
+                        <div class="cta-buttons">
+                            <a href="tel:265992260985" class="btn-primary">
+                                <i class="fas fa-phone"></i> Discuss Hosting: 265992260985
+                            </a>
+                            <a href="mailto:cupicsart@gmail.com" class="btn-secondary">
+                                <i class="fas fa-envelope"></i> Get Hosting Quote
+                            </a>
+                        </div>
+                    </div>
+        </div>
+                  
+
+                    <!-- Hosting Features -->
+                    <div class="hosting-features">
+                        <h3 class="subsection-title">Why Choose Our Web Hosting?</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                <h4>High Performance</h4>
+                                <p>Fast loading speeds with SSD storage, optimized servers, and content delivery networks for superior website performance.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <h4>Enhanced Security</h4>
+                                <p>Comprehensive security measures including SSL certificates, malware scanning, and regular security updates.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h4>Expert Support</h4>
+                                <p>24/7 technical support from certified professionals who understand local business needs and challenges.</p>
+                            </div>
+
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h4>Scalable Solutions</h4>
+                                <p>Flexible hosting plans that grow with your business, from startup websites to enterprise applications.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- Services Overview -->
+                <section class="services-overview">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Our Professional Services</h2>
+                            <p>Comprehensive IT solutions for all your technology needs</p>
+                        </div>
+                        <div class="services-grid">
+                            <div class="service-card" onclick="shop.showService('computer-repair')">
+                                <div class="service-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <h3>Computer Repair</h3>
+                                <p>Hardware & software troubleshooting, virus removal, system optimization</p>
+                                <div class="service-price">From MWK 50,000</div>
+                                <button class="service-btn">Learn More</button>
+                            </div>
+                            <div class="service-card" onclick="shop.showService('printer-repair')">
+                                <div class="service-icon">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <h3>Printer Repair</h3>
+                                <p>All printer brands, ink system repair, paper jam fixes, maintenance</p>
+                                <div class="service-price">From MWK 30,000</div>
+                                <button class="service-btn">Learn More</button>
+                            </div>
+                            <div class="service-card" onclick="shop.showService('network-setup')">
+                                <div class="service-icon">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <h3>Network Setup</h3>
+                                <p>WiFi setup, cable installation, network troubleshooting, security</p>
+                                <div class="service-price">From MWK 75,000</div>
+                                <button class="service-btn">Learn More</button>
+                            </div>
+                            <div class="service-card" onclick="shop.showService('data-recovery')">
+                                <div class="service-icon">
+                                    <i class="fas fa-hdd"></i>
+                                </div>
+                                <h3>Data Recovery</h3>
+                                <p>Hard drive recovery, SSD repair, deleted file restoration</p>
+                                <div class="service-price">From MWK 100,000</div>
+                                <button class="service-btn">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Featured Products -->
+                <section class="featured-products">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Featured Hardware</h2>
+                            <p>Premium quality components and tools for professionals</p>
+                        </div>
+                        <div class="products-showcase" id="featured-products-grid">
+                            <!-- Featured products will be loaded here -->
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-primary" onclick="shop.showPage('products')">
+                                View All Products <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why Choose Us -->
+                <section class="why-choose-us">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Why Choose Cupicsart IT Solutions?</h2>
+                            <p>Professional expertise you can trust</p>
+                        </div>
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <h3>Expert Technicians</h3>
+                                <p>Certified professionals with years of experience in IT repair and support</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <h3>Fast Turnaround</h3>
+                                <p>Most repairs completed within 24-48 hours with emergency service available</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3>Warranty Guarantee</h3>
+                                <p>All repairs come with warranty and satisfaction guarantee</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h3>Competitive Pricing</h3>
+                                <p>Fair, transparent pricing with free diagnostics and quotes</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Latest Blog Posts -->
+                <section class="latest-blog">
+                    <div class="container">
+                        <div class="section-header">
+                            <h2>Latest Stories & Updates</h2>
+                            <p>Stay updated with our latest news, tips, and success stories</p>
+                        </div>
+                        <div class="blog-preview" id="latest-blog-posts">
+                            <!-- Latest blog posts will be loaded here -->
+                        </div>
+                        <div class="text-center">
+                            <button class="btn-secondary" onclick="shop.showPage('blog')">
+                                Read All Stories <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Products Page -->
+            <div class="page" id="products-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>IT Hardware & Components</h1>
+                        <p>Professional grade hardware for all your IT needs</p>
+                    </div>
+
+                    <!-- Product Categories -->
+                    <div class="product-categories">
+                        <button class="category-btn active" data-category="all">
+                            <i class="fas fa-th-large"></i> All Products
+                        </button>
+                        <button class="category-btn" data-category="storage">
+                            <i class="fas fa-hdd"></i> Storage
+                        </button>
+                        <button class="category-btn" data-category="networking">
+                            <i class="fas fa-network-wired"></i> Networking
+                        </button>
+                        <button class="category-btn" data-category="tools">
+                            <i class="fas fa-tools"></i> Tools
+                        </button>
+                        <button class="category-btn" data-category="components">
+                            <i class="fas fa-microchip"></i> Components
+                        </button>
+                        <button class="category-btn" data-category="accessories">
+                            <i class="fas fa-plug"></i> Accessories
+                        </button>
+                        <button class="category-btn" data-category="peripherals">
+                            <i class="fas fa-keyboard"></i> Peripherals
+                        </button>
+                        <button class="category-btn" data-category="printers">
+                            <i class="fas fa-print"></i> Printers
+                        </button>
+                        <button class="category-btn" data-category="audio">
+                            <i class="fas fa-headphones"></i> Audio
+                        </button>
+                        <button class="category-btn" data-category="software">
+                            <i class="fas fa-code"></i> Software
+                        </button>
+                        <button class="category-btn" data-category="tvs">
+                            <i class="fas fa-tv"></i> TVs
+                        </button>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="products-filters">
+                        <div class="filter-group">
+                            <label>Sort by:</label>
+                            <select id="sort-filter">
+                                <option value="name">Name</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="newest">Newest First</option>
+                                <option value="popular">Most Popular</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Price Range:</label>
+                            <select id="price-filter">
+                                <option value="all">All Prices</option>
+                                <option value="0-20000">MWK 0 - MWK 20,000</option>
+                                <option value="20000-50000">MWK 20,000 - MWK 50,000</option>
+                                <option value="50000-100000">MWK 50,000 - MWK 100,000</option>
+                                <option value="100000-200000">MWK 100,000 - MWK 200,000</option>
+                                <option value="200000-500000">MWK 200,000 - MWK 500,000</option>
+                                <option value="500000+">MWK 500,000+</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label>Availability:</label>
+                            <select id="stock-filter">
+                                <option value="all">All Items</option>
+                                <option value="in-stock">In Stock</option>
+                                <option value="pre-order">Pre-Order</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="products-grid">
+                        <!-- Products will be loaded here -->
+                    </div>
+
+                    <!-- Load More -->
+                    <div class="load-more-section">
+                        <button class="btn-secondary" id="load-more-btn">
+                            <i class="fas fa-plus"></i> Load More Products
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Page -->
+            <div class="page" id="services-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Professional IT Services</h1>
+                        <p>Expert solutions for all your technology problems</p>
+                    </div>
+
+                    <div class="services-detailed">
+                        <!-- Computer Repair -->
+                        <div class="service-section" id="computer-repair-section">
+                            <div class="service-header">
+                                <div class="service-icon-large">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h2>Computer Repair Services</h2>
+                                    <p>Professional hardware and software repair for all computer types</p>
+                                    <div class="service-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>4.9/5 (150+ reviews)</span>
+                                    </div>
+                                </div>
+                                <div class="service-pricing">
+                                    <div class="price-tag">From MWK 50,000</div>
+                                    <button class="btn-primary" onclick="shop.openServiceModal('computer-repair')">
+                                        Book Service
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="service-details">
+                                <div class="service-grid">
+                                    <div class="service-list">
+                                        <h3>What We Fix:</h3>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Hardware failures & replacements</li>
+                                            <li><i class="fas fa-check"></i> Software issues & virus removal</li>
+                                            <li><i class="fas fa-check"></i> System crashes & blue screens</li>
+                                            <li><i class="fas fa-check"></i> Slow performance optimization</li>
+                                            <li><i class="fas fa-check"></i> Data backup & recovery</li>
+                                            <li><i class="fas fa-check"></i> Operating system installation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="service-process">
+                                        <h3>Our Process:</h3>
+                                        <div class="process-steps">
+                                            <div class="step">
+                                                <div class="step-number">1</div>
+                                                <div class="step-content">
+                                                    <h4>Free Diagnosis</h4>
+                                                    <p>Complete system analysis</p>
+                                                </div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="step-number">2</div>
+                                                <div class="step-content">
+                                                    <h4>Quote & Approval</h4>
+                                                    <p>Transparent pricing</p>
+                                                </div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="step-number">3</div>
+                                                <div class="step-content">
+                                                    <h4>Expert Repair</h4>
+                                                    <p>Professional service</p>
+                                                </div>
+                                            </div>
+                                            <div class="step">
+                                                <div class="step-number">4</div>
+                                                <div class="step-content">
+                                                    <h4>Testing & Warranty</h4>
+                                                    <p>Quality assurance</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Printer Repair -->
+                        <div class="service-section" id="printer-repair-section">
+                            <div class="service-header">
+                                <div class="service-icon-large">
+                                    <i class="fas fa-print"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h2>Printer Repair & Maintenance</h2>
+                                    <p>All printer brands and models serviced by certified technicians</p>
+                                    <div class="service-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>4.8/5 (89+ reviews)</span>
+                                    </div>
+                                </div>
+                                <div class="service-pricing">
+                                    <div class="price-tag">From MWK 30,000</div>
+                                    <button class="btn-primary" onclick="shop.openServiceModal('printer-repair')">
+                                        Book Service
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="service-details">
+                                <div class="service-grid">
+                                    <div class="service-list">
+                                        <h3>Printer Issues We Fix:</h3>
+                                        <ul>
+                                            <li><i class="fas fa-check"></i> Paper jams & feeding problems</li>
+                                            <li><i class="fas fa-check"></i> Print quality issues</li>
+                                            <li><i class="fas fa-check"></i> Ink system repairs</li>
+                                            <li><i class="fas fa-check"></i> Network connectivity issues</li>
+                                            <li><i class="fas fa-check"></i> Driver installation & updates</li>
+                                            <li><i class="fas fa-check"></i> Maintenance & cleaning</li>
+                                        </ul>
+                                    </div>
+                                    <div class="supported-brands">
+                                        <h3>Supported Brands:</h3>
+                                        <div class="brands-grid">
+                                            <div class="brand">HP</div>
+                                            <div class="brand">Canon</div>
+                                            <div class="brand">Epson</div>
+                                            <div class="brand">Brother</div>
+                                            <div class="brand">Samsung</div>
+                                            <div class="brand">Lexmark</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Network Setup -->
+                        <div class="service-section" id="network-setup-section">
+                            <div class="service-header">
+                                <div class="service-icon-large">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="service-info">
+                                    <h2>Network Setup & Support</h2>
+                                    <p>Professional network installation and troubleshooting services</p>
+                                    <div class="service-rating">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span>4.9/5 (67+ reviews)</span>
+                                    </div>
+                                </div>
+                                <div class="service-pricing">
+                                    <div class="price-tag">From MWK 75,000</div>
+                                    <button class="btn-primary" onclick="shop.openServiceModal('network-setup')">
+                                        Book Service
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Page -->
+            <div class="page" id="blog-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Our Blog & Stories</h1>
+                        <p>Latest updates, tips, and success stories from Cupicsart IT Solutions</p>
+                    </div>
+
+                    <!-- Blog Categories -->
+                    <div class="blog-categories">
+                        <button class="blog-category-btn active" data-category="all">
+                            <i class="fas fa-th-large"></i> All Posts
+                        </button>
+                        <button class="blog-category-btn" data-category="success-stories">
+                            <i class="fas fa-trophy"></i> Success Stories
+                        </button>
+                        <button class="blog-category-btn" data-category="tech-tips">
+                            <i class="fas fa-lightbulb"></i> Tech Tips
+                        </button>
+                        <button class="blog-category-btn" data-category="company-news">
+                            <i class="fas fa-newspaper"></i> Company News
+                        </button>
+                        <button class="blog-category-btn" data-category="tutorials">
+                            <i class="fas fa-graduation-cap"></i> Tutorials
+                        </button>
+                    </div>
+
+                    <!-- Featured Post -->
+                    <div class="featured-post" id="featured-blog-post">
+                        <!-- Featured post will be loaded here -->
+                    </div>
+
+                    <!-- Blog Posts Grid -->
+                    <div class="blog-posts-grid" id="blog-posts-grid">
+                        <!-- Blog posts will be loaded here -->
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <div class="newsletter-signup">
+                        <div class="newsletter-content">
+                            <div class="newsletter-text">
+                                <h3>Stay Updated</h3>
+                                <p>Subscribe to our newsletter for the latest tech tips, company updates, and exclusive offers.</p>
+                            </div>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" placeholder="Enter your email" id="newsletter-email" required>
+                                <button type="submit" class="btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Subscribe
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Page -->
+            <div class="page" id="about-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>About Cupicsart IT Solutions</h1>
+                        <p>Your trusted partner in professional IT services</p>
+                    </div>
+
+                    <div class="about-content">
+                        <!-- Founder Story -->
+                        <div class="founder-story">
+                            <div class="founder-header">
+                                <div class="founder-image">
+                                    <img src="KONDWANI.png" alt="Kondwani Kapichi - Founder" class="founder-photo">
+                                </div>
+                                <div class="founder-info">
+                                    <h2>Meet Our Founder</h2>
+                                    <h3>KONDWANI KAPICHI</h3>
+                                    <p class="founder-title">Computer Genius & Website Developer</p>
+                                    <div class="founder-social">
+                                        <a href="www.https://facebook.com/kondwani.kapichi" target="_blank" aria-label="Facebook">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <a href="www.https://wa.me/265992260985" target="_blank" aria-label="WhatsApp">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="www.https://instagram.com/kondwanikapichi" target="_blank" aria-label="Instagram">
+                                            <i class="fab fa-instagram"></i>
+                                    </a></div>
+                                </div>
+                            </div>
+                            
+                            <div class="founder-story-content">
+                                <h3>The Journey Begins</h3>
+                                <p>Kondwani Kapichi's journey into the world of technology began at the age of 12 when he first laid hands on an old desktop computer in his neighborhood. What started as curiosity quickly transformed into an obsession with understanding how these machines worked.</p>
+                                
+                                <p>"I remember spending hours taking apart old computers and putting them back together," recalls Kondwani. "My family thought I was crazy, but I was fascinated by every component, every circuit, and every line of code."</p>
+
+                                <h3>Self-Taught Excellence</h3>
+                                <p>Without formal training initially, Kondwani taught himself programming languages, hardware troubleshooting, and network configuration through online resources, books, and countless hours of hands-on experimentation. His bedroom became a makeshift laboratory filled with computer parts, cables, and testing equipment.</p>
+
+                                <p>By age 16, he was already helping neighbors fix their computers and had built his first website from scratch. His reputation for solving complex technical problems spread quickly through his community.</p>
+
+                                <h3>The Inspiration</h3>
+                                <p>The turning point came when Kondwani helped a local small business recover critical data from a crashed server. The business owner's relief and gratitude made him realize the real impact technology services could have on people's lives and livelihoods.</p>
+
+                                <p>"That moment changed everything for me," Kondwani explains. "I realized that technology isn't just about circuits and code – it's about helping people, solving real problems, and making life easier for others."</p>
+
+                                <h3>Building Cupicsart IT Solutions</h3>
+                                <p>In 2020, at the age of 22, Kondwani officially founded Cupicsart IT Solutions with a simple mission: to provide professional, reliable, and affordable IT services to individuals and businesses. The name "Cupicsart" combines his love for creativity ("art") with his technical expertise.</p>
+
+                                <p>Starting from a small home office with basic tools, Kondwani has grown the business into a trusted IT service provider, handling everything from simple computer repairs to complex network installations and custom website development.</p>
+
+                                <h3>Vision for the Future</h3>
+                                <p>Today, Kondwani continues to lead Cupicsart IT Solutions with the same passion and dedication that started his journey. His vision extends beyond just fixing computers – he aims to bridge the digital divide by making technology accessible and understandable for everyone.</p>
+
+                                <p>"Every device we repair, every website we build, every problem we solve is a step toward a more connected and empowered community," says Kondwani. "Technology should serve people, not intimidate them."</p>
+
+                                <div class="founder-achievements">
+                                    <h3>Achievements & Expertise</h3>
+                                    <div class="achievements-grid">
+                                        <div class="achievement">
+                                            <i class="fas fa-tools"></i>
+                                            <h4>500+ Repairs</h4>
+                                            <p>Successfully completed computer and printer repairs</p>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-globe"></i>
+                                            <h4>50+ Websites</h4>
+                                            <p>Custom websites developed for businesses</p>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-network-wired"></i>
+                                            <h4>100+ Networks</h4>
+                                            <p>Network installations and configurations</p>
+                                        </div>
+                                        <div class="achievement">
+                                            <i class="fas fa-graduation-cap"></i>
+                                            <h4>Self-Taught Expert</h4>
+                                            <p>Continuous learning and skill development</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="founder-quote">
+                                    <blockquote>
+                                        "Success in technology isn't just about knowing the latest trends – it's about understanding people's needs and using technology to solve real problems. Every challenge is an opportunity to learn and grow."
+                                    </blockquote>
+                                    <cite>- Kondwani Kapichi, Founder & CEO</cite>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Company Overview -->
+                        <div class="company-overview">
+                            <div class="about-intro">
+                                <div class="about-text">
+                                    <h2>Professional IT Services Since 2020</h2>
+                                    <p>Cupicsart IT Solutions is a leading provider of professional computer repair, printer services, and IT hardware sales. We specialize in both hardware and software solutions, offering comprehensive support for individuals and businesses.</p>
+                                    
+                                    <div class="about-highlights">
+                                        <div class="highlight-item">
+                                            <i class="fas fa-award"></i>
+                                            <div>
+                                                <h3>Certified Expertise</h3>
+                                                <p>Our team holds industry certifications and continuous training</p>
+                                            </div>
+                                        </div>
+                                        <div class="highlight-item">
+                                            <i class="fas fa-tools"></i>
+                                            <div>
+                                                <h3>Advanced Equipment</h3>
+                                                <p>State-of-the-art diagnostic and repair tools</p>
+                                            </div>
+                                        </div>
+                                        <div class="highlight-item">
+                                            <i class="fas fa-handshake"></i>
+                                            <div>
+                                                <h3>Customer First</h3>
+                                                <p>Dedicated to providing exceptional customer service</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about-image">
+                                    <img src="logo.jpg" alt="Cupicsart IT Solutions" class="about-logo">
+                                </div>
+                            </div>
+
+                            <div class="stats-section">
+                                <div class="stat-card">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Repairs Completed</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Success Rate</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">24/7</div>
+                                    <div class="stat-label">Support Available</div>
+                                </div>
+                                <div class="stat-card">
+                                    <div class="stat-number">4+</div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Page -->
+            <div class="page" id="contact-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Contact Us</h1>
+                        <p>Get in touch for professional IT support</p>
+                    </div>
+
+                    <div class="contact-content">
+                        <div class="contact-methods">
+                            <div class="contact-card primary">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>Call Us Now</h3>
+                                    <p><a href="tel:265992260985">265992260985</a></p>
+                                    <small>Available Mon-Sat: 9AM-8PM</small>
+                                    <button class="contact-btn" onclick="window.location.href='tel:265992260985'">
+                                        <i class="fas fa-phone"></i> Call Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>WhatsApp</h3>
+                                    <p>Quick support via WhatsApp</p>
+                                    <small>Instant messaging support</small>
+                                    <button class="contact-btn whatsapp" onclick="window.open('https://wa.me/265992260985', '_blank')">
+                                        <i class="fab fa-whatsapp"></i> Message
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fab fa-facebook"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>Facebook</h3>
+                                    <p>Follow us on Facebook</p>
+                                    <small>Latest updates and news</small>
+                                    <button class="contact-btn facebook" onclick="window.open('https://facebook.com/cupicsart', '_blank')">
+                                        <i class="fab fa-facebook"></i> Follow
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>Email Support</h3>
+                                    <p><a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a></p>
+                                    <small>Response within 24 hours</small>
+                                    <button class="contact-btn" onclick="window.location.href='mailto:cupicsart@gmail.com'">
+                                        <i class="fas fa-envelope"></i> Email
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="contact-card">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-info">
+                                    <h3>Business Hours</h3>
+                                    <p>Monday - Saturday</p>
+                                    <small>9:00 AM - 8:00 PM</small>
+                                    <div class="hours-status">
+                                        <span class="status-indicator" id="business-status"></span>
+                                        <span id="status-text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form-section">
+                            <h2>Send us a Message</h2>
+                            <form class="contact-form" id="contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="contact-name">Full Name *</label>
+                                        <input type="text" id="contact-name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-phone">Phone Number *</label>
+                                        <input type="tel" id="contact-phone" name="phone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service-type">Service Type</label>
+                                    <select id="service-type" name="service_type">
+                                        <option value="">Select Service</option>
+                                        <option value="computer-repair">Computer Repair</option>
+                                        <option value="printer-repair">Printer Repair</option>
+                                        <option value="network-setup">Network Setup</option>
+                                        <option value="data-recovery">Data Recovery</option>
+                                        <option value="software-support">Software Support</option>
+                                        <option value="hardware-purchase">Hardware Purchase</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="urgency">Urgency Level</label>
+                                    <select id="urgency" name="urgency">
+                                        <option value="normal">Normal</option>
+                                        <option value="urgent">Urgent (24-48 hours)</option>
+                                        <option value="emergency">Emergency (Same day)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-message">Message *</label>
+                                    <textarea id="contact-message" name="message" rows="5" required placeholder="Please describe your issue or requirements in detail..."></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Support Page -->
+            <div class="page" id="support-page">
+                <div class="container">
+                    <div class="page-header">
+                        <h1>Technical Support</h1>
+                        <p>Get help with your IT issues</p>
+                    </div>
+
+                    <div class="support-content">
+                        <div class="support-options">
+                            <div class="support-card emergency">
+                                <div class="support-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <h3>Emergency Support</h3>
+                                <p>Critical system failures, data loss, security breaches</p>
+                                <div class="support-price">MWK 150,000/hour</div>
+                                <button class="btn-primary" onclick="window.location.href='tel:265992260985'">
+                                    <i class="fas fa-phone"></i> Call Now
+                                </button>
+                            </div>
+
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <h3>Remote Support</h3>
+                                <p>Software issues, configuration, troubleshooting</p>
+                                <div class="support-price">MWK 75,000/hour</div>
+                                <button class="btn-secondary" onclick="shop.openServiceModal('remote-support')">
+                                    <i class="fas fa-desktop"></i> Start Session
+                                </button>
+                            </div>
+
+                            <div class="support-card">
+                                <div class="support-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h3>On-Site Support</h3>
+                                <p>Hardware installation, network setup, training</p>
+                                <div class="support-price">MWK 100,000/hour</div>
+                                <button class="btn-secondary" onclick="shop.openServiceModal('on-site')">
+                                    <i class="fas fa-calendar"></i> Schedule Visit
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="faq-section">
+                            <h2>Frequently Asked Questions</h2>
+                            <div class="faq-list">
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>How long does a typical computer repair take?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Most repairs are completed within 24-48 hours. Simple software issues can often be fixed the same day, while hardware replacements may take 2-3 days depending on parts availability.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>Do you provide warranty on repairs?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>Yes, all repairs come with a 90-day warranty on parts and labor. If the same issue occurs within the warranty period, we'll fix it free of charge.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>Can you recover data from a crashed hard drive?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>We offer professional data recovery services with a high success rate. The cost and timeline depend on the severity of the damage. We provide a free assessment before starting any recovery work.</p>
+                                    </div>
+                                </div>
+                                <div class="faq-item">
+                                    <div class="faq-question">
+                                        <h3>What payment methods do you accept?</h3>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="faq-answer">
+                                        <p>We accept cash, mobile money, bank transfers, and major credit cards. Payment is typically due upon completion of service, though we may require deposits for expensive parts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <div class="footer-logo">
+                            <img src="logo.jpg" alt="Cupicsart IT Solutions">
+                            <div class="footer-logo-text">
+                                <h3>Cupicsart IT Solutions</h3>
+                                <p>Professional IT Services</p>
+                            </div>
+                        </div>
+                        <p>Your trusted partner for computer repair, printer services, and IT hardware. Professional solutions for all your technology needs.</p>
+                        <div class="footer-social">
+                            <a href="https://wa.me/265992260985" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="https://facebook.com/cupicsart" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/cupicsart" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#" onclick="shop.showService('computer-repair')">Computer Repair</a></li>
+                            <li><a href="#" onclick="shop.showService('printer-repair')">Printer Repair</a></li>
+                            <li><a href="#" onclick="shop.showService('network-setup')">Network Setup</a></li>
+                            <li><a href="#" onclick="shop.showService('data-recovery')">Data Recovery</a></li>
+                            <li><a href="#" onclick="shop.showService('software-support')">Software Support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Products</h4>
+                        <ul>
+                            <li><a href="#" onclick="shop.showProductCategory('storage')">SSDs & HDDs</a></li>
+                            <li><a href="#" onclick="shop.showProductCategory('networking')">Network Cables</a></li>
+                            <li><a href="#" onclick="shop.showProductCategory('tools')">Crimping Tools</a></li>
+                            <li><a href="#" onclick="shop.showProductCategory('tools')">Cable Testers</a></li>
+                            <li><a href="#" onclick="shop.showProductCategory('components')">PC Components</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Contact Info</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:265992260985">265992260985</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:cupicsart@gmail.com">cupicsart@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Mon-Sat: 07:30AM-17:00PM</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>90-Day Warranty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-bottom-content">
+                        <p>&copy; 2023 Cupicsart IT Solutions. All rights reserved. Founded by Kondwani Kapichi.</p>
+                        <div class="footer-links">
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Warranty Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float" id="whatsapp-float">
+        <a href="https://wa.me/265992260985" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Chat with us</span>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+        <a href="#" onclick="scrollToTop(); return false;" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+            <span class="back-to-top-text">Back to Top</span>
+        </a>
+    </div>
+
+    <!-- Modals -->
+    <!-- Shopping Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-shopping-cart"></i> Shopping Cart</h2>
+                <button class="close-btn" id="close-cart">&times;</button>
+            </div>
+            <div class="modal-body" id="cart-items">
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Your cart is empty</p>
+                    <button class="btn-primary" onclick="shop.closeModal('cart-modal'); shop.showPage('products')">
+                        Start Shopping
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total">
+                    <h3>Total: <span id="cart-total">MWK 0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button class="btn-secondary" id="clear-cart">Clear Cart</button>
+                    <button class="btn-primary" id="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Booking Modal -->
+    <div class="modal" id="service-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-tools"></i> Book Service</h2>
+                <button class="close-btn" id="close-service">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="service-form" class="service-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-customer-name">Full Name *</label>
+                            <input type="text" id="service-customer-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-customer-phone">Phone Number *</label>
+                            <input type="tel" id="service-customer-phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-customer-email">Email Address</label>
+                        <input type="email" id="service-customer-email">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service-type-select">Service Type *</label>
+                            <select id="service-type-select" required>
+                                <option value="">Select Service</option>
+                                <option value="computer-repair">Computer Repair</option>
+                                <option value="printer-repair">Printer Repair</option>
+                                <option value="network-setup">Network Setup</option>
+                                <option value="data-recovery">Data Recovery</option>
+                                <option value="software-support">Software Support</option>
+                                <option value="remote-support">Remote Support</option>
+                                <option value="on-site">On-Site Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-urgency">Urgency *</label>
+                            <select id="service-urgency" required>
+                                <option value="normal">Normal (2-3 days)</option>
+                                <option value="urgent">Urgent (24-48 hours) +MWK 25,000</option>
+                                <option value="emergency">Emergency (Same day) +MWK 50,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-description">Problem Description *</label>
+                        <textarea id="service-description" rows="4" required placeholder="Please describe the issue in detail..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="service-location">Service Location</label>
+                        <select id="service-location">
+                            <option value="drop-off">Drop-off at our location</option>
+                            <option value="pickup">Pickup service (+MWK 20,000)</option>
+                            <option value="on-site">On-site service (+MWK 50,000)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="service-estimate">
+                    <h3>Estimated Cost: <span id="service-estimate">MWK 50,000</span></h3>
+                    <p class="estimate-note">Final cost determined after diagnosis</p>
+                </div>
+                <div class="service-actions">
+                    <button class="btn-secondary" id="cancel-service">Cancel</button>
+                    <button class="btn-primary" id="confirm-service">
+                        <i class="fas fa-check"></i> Book Service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quote-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-calculator"></i> Get Quote</h2>
+                <button class="close-btn" id="close-quote">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="quote-form">
+                    <div class="form-group">
+                        <label for="quote-service">Service/Product *</label>
+                        <select id="quote-service" required>
+                            <option value="">Select Service or Product</option>
+                            <optgroup label="Services">
+                                <option value="computer-repair">Computer Repair</option>
+                                <option value="printer-repair">Printer Repair</option>
+                                <option value="network-setup">Network Setup</option>
+                                <option value="data-recovery">Data Recovery</option>
+                                <option value="software-support">Software Support</option>
+                                <option value="remote-support">Remote Support</option>
+                                <option value="on-site">On-Site Support</option>
+                            </optgroup>
+                            <optgroup label="Products">
+                                <option value="ssd">SSD Installation</option>
+                                <option value="hdd">HDD Replacement</option>
+                                <option value="network-cable">Network Cable Setup</option>
+                                <option value="custom">Custom Build</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-details">Details *</label>
+                        <textarea id="quote-details" rows="4" required placeholder="Please provide detailed requirements..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quote-name">Name *</label>
+                            <input type="text" id="quote-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-phone">Phone *</label>
+                            <input type="tel" id="quote-phone" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="quote-email">Email</label>
+                        <input type="email" id="quote-email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-quote">Cancel</button>
+                <button class="btn-primary" id="submit-quote">
+                    <i class="fas fa-paper-plane"></i> Request Quote
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-detail-modal">
+        <div class="modal-content product-modal">
+            <button class="close-btn" id="close-product-detail">&times;</button>
+            <div class="product-detail-content" id="product-detail-content">
+                <!-- Product details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post Modal -->
+    <div class="modal" id="blog-post-modal">
+        <div class="modal-content blog-modal">
+            <button class="close-btn" id="close-blog-post">&times;</button>
+            <div class="blog-post-content" id="blog-post-content">
+                <!-- Blog post content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-credit-card"></i> Checkout</h2>
+                <button class="close-btn" id="close-checkout">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="checkout-steps">
+                    <div class="step-indicator active" data-step="1">1. Details</div>
+                    <div class="step-indicator" data-step="2">2. Payment</div>
+                    <div class="step-indicator" data-step="3">3. Confirm</div>
+                </div>
+
+                <!-- Step 1: Shipping/Pickup Details -->
+                <div class="checkout-step-content active" data-step-content="1">
+                    <h3>Delivery or Pickup?</h3>
+                    <div class="form-group delivery-option">
+                        <label class="radio-label">
+                            <input type="radio" name="delivery_option" value="delivery" id="delivery-option" checked>
+                            <i class="fas fa-truck"></i> Delivery to my address
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="delivery_option" value="pickup" id="pickup-option">
+                            <i class="fas fa-store"></i> Pickup at Cupicsart IT Shop
+                        </label>
+                    </div>
+
+                    <div id="delivery-details-section">
+                        <h3>Shipping Details</h3>
+                        <div class="form-group">
+                            <label for="checkout-name">Full Name *</label>
+                            <input type="text" id="checkout-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-phone">Phone Number *</label>
+                            <input type="tel" id="checkout-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-email">Email Address</label>
+                            <input type="email" id="checkout-email">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-address">Delivery Address *</label>
+                            <input type="text" id="checkout-address" placeholder="Street, City, District" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-distance">Distance from Shop (km) *</label>
+                            <input type="number" id="checkout-distance" min="1" max="100" step="0.1" placeholder="e.g., 5.5" required>
+                            <small class="form-help">Enter approximate distance in kilometers. Delivery fee: MWK 2,000 per km</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout-notes">Order Notes (Optional)</label>
+                            <textarea id="checkout-notes" rows="3" placeholder="e.g., specific delivery instructions, preferred time"></textarea>
+                        </div>
+                    </div>
+
+                    <div id="pickup-details-section" style="display: none;">
+                        <h3>Pickup Details</h3>
+                        <p>You can pick up your order at our shop during business hours:</p>
+                        <p><strong>Cupicsart IT Solutions</strong><br>
+                        Area 47, Sector 1, Plot 123<br>
+                        Lilongwe, Malawi</p>
+                        <p>We will notify you when your order is ready for pickup.</p>
+                        <div class="form-group">
+                            <label for="pickup-name">Full Name *</label>
+                            <input type="text" id="pickup-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-phone">Phone Number *</label>
+                            <input type="tel" id="pickup-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-email">Email Address</label>
+                            <input type="email" id="pickup-email">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Payment Method -->
+                <div class="checkout-step-content" data-step-content="2" style="display: none;">
+                    <h3>Select Payment Method</h3>
+                    <div class="form-group">
+                        <label class="radio-label payment-method-card">
+                            <input type="radio" name="payment_method" value="mobile_money" checked>
+                            <i class="fas fa-mobile-alt"></i> Mobile Money (Airtel Money / TNM Mpamba)
+                        </label>
+                        <label class="radio-label payment-method-card">
+                            <input type="radio" name="payment_method" value="bank_transfer">
+                            <i class="fas fa-bank"></i> Bank Transfer
+                        </label>
+                        <label class="radio-label payment-method-card">
+                            <input type="radio" name="payment_method" value="cash_on_delivery">
+                            <i class="fas fa-money-bill-wave"></i> Cash on Delivery/Pickup
+                        </label>
+                    </div>
+                    <div class="payment-info-box">
+                        <p><strong>Note:</strong> This is a simulated payment. You will receive instructions for actual payment after confirming your order.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3: Order Confirmation -->
+                <div class="checkout-step-content" data-step-content="3" style="display: none;">
+                    <h3>Order Summary & Confirmation</h3>
+                    <div class="order-summary-details">
+                        <div class="summary-section">
+                            <h4>Items in Cart</h4>
+                            <ul id="checkout-cart-items">
+                                <!-- Cart items will be dynamically loaded here -->
+                            </ul>
+                            <div class="summary-total">
+                                <span>Subtotal:</span> <span id="checkout-subtotal">MWK 0.00</span>
+                            </div>
+                            <div class="summary-total" id="delivery-fee-row" style="display: none;">
+                                <span>Delivery Fee (<span id="summary-distance">0</span>km × MWK 2,000):</span> <span id="checkout-delivery-fee">MWK 0.00</span>
+                            </div>
+                            <div class="summary-total final-total">
+                                <span>Total:</span> <span id="checkout-final-total">MWK 0.00</span>
+                            </div>
+                        </div>
+                        <div class="summary-section">
+                            <h4>Contact & Shipping/Pickup Info</h4>
+                            <p><strong>Name:</strong> <span id="summary-name"></span></p>
+                            <p><strong>Phone:</strong> <span id="summary-phone"></span></p>
+                            <p><strong>Email:</strong> <span id="summary-email"></span></p>
+                            <p id="summary-address-row"><strong>Address:</strong> <span id="summary-address"></span></p>
+                            <p><strong>Option:</strong> <span id="summary-delivery-option"></span></p>
+                            <p id="summary-notes-row"><strong>Notes:</strong> <span id="summary-notes"></span></p>
+                        </div>
+                        <div class="summary-section">
+                            <h4>Payment Method</h4>
+                            <p><span id="summary-payment-method"></span></p>
+                        </div>
+                    </div>
+                    <p class="confirmation-note">By clicking "Place Order", you agree to our terms and conditions and confirm your purchase.</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="checkout-prev-btn" style="display: none;">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button class="btn-primary" id="checkout-next-btn">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn-primary" id="place-order-btn" style="display: none;">
+                    <i class="fas fa-check"></i> Place Order
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner">
+            <i class="fas fa-cog fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script src="supabase.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize the shop after all scripts are loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            window.shop = new CupicsartITShop();
+        });
+    </script>
+</body>
+</html>
